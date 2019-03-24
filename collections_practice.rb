@@ -95,8 +95,7 @@ def organize_schools(hash)
     if output == {}
       output[city[:location]] = [school]
     elsif output.key?(city[:location])
-      return output
-      output[city].push(school)
+      output[city:location].push(school)
     else
       output[city[:location]] = [school]
     end
