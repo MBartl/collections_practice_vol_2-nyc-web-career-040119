@@ -82,6 +82,7 @@ end
 def find_cool(array)
   array.each do |data|
     data.each do |keys|
+      return keys
       keys.each do |value|
         return value
         if value == "cool"
