@@ -100,7 +100,3 @@ def organize_schools(hash)
   end
   return output
 end
-  
-
-
-
