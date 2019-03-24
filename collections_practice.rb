@@ -92,16 +92,10 @@ end
 def organize_schools(hash)
   output = {}
   hash.each do |school, city|
-    if output == {}
-      output[city[:location]] = [school]
+    if output.key?(city[:location])
+      output[city].push(school)
     else
-      output.key?(city[:location])
-      output.each do |out_city, out_school|
-        if city[:location] == out_city
-          output[out_city].push(school)
-          
-        end
-      end
+      output[city[:location]] = [school]
     end
   end
   return output
