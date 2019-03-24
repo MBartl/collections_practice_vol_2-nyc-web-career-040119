@@ -91,8 +91,8 @@ end
 
 def organize_schools(schools)
   output = {}
-  schools.each do |school, location|
-    return location[:location]
+  schools.each do |school, city|
+    return city[:location]
   end
 end
   
