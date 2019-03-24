@@ -89,15 +89,14 @@ def find_cool(array)
   return output
 end
 
-def organize_schools(schools)
+def organize_schools(hash)
   output = {}
-  return schools[2]
-  schools.each do |school, city|
+  hash.each do |school, city|
     if output == {}
       output[city[:location]] = [school]
     else
       output.each do |city2, school2|
-        return city2
+        return city[:location]
       end
     end
   end
