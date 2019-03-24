@@ -71,7 +71,8 @@ def merge_data(keys, data)
     data.each do |both|
       both.each do |name, stats|
         return stats
-      output[i] = (stats)
+        output[i] = (stats)
+      end
     end
     i += 1
   end
