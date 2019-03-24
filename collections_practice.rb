@@ -61,8 +61,8 @@ end
 
 def merge_data(keys, data)
   output = []
+  i = 0
   data.each do |both|
-    i = 0
     both.each do |name, stats|
       while i < keys.length do
         stats[:first_name] = keys[i][:first_name]
