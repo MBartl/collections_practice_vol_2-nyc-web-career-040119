@@ -63,6 +63,7 @@ def merge_data(keys, data)
   output = []
   data.each do |both|
     both.each do |name, stats|
+      return stats[:awesomeness]
       keys[:awesomeness] = stats[:awesomeness]
       keys[:height] = stats[:height]
       keys[:last_name] = stats[:last_name]
