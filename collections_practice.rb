@@ -67,6 +67,7 @@ def merge_data(keys, data)
       both.each do |name, stats|
         stats[:first_name] = keys[i][:first_name]
         stats[:motto] = keys[i][:motto]
+        output.push(stats)
       end
     end
     i += 1
