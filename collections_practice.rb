@@ -100,6 +100,7 @@ def organize_schools(schools)
           output[city2].push(school)
         else
           output[city[:location]] = [school]
+        end
       end
     end
   end
