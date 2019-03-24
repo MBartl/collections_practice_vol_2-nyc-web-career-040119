@@ -69,7 +69,7 @@ def merge_data(keys, data)
         stats[:motto] = keys[i][:motto]
       end
     end
-  i += 1
+    i += 1
   end
   return output
 end
