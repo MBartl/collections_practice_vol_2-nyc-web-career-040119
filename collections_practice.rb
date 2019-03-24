@@ -88,6 +88,9 @@ def find_cool(array)
   end
   return output
 end
-    
+
+def organize_schools
   
+
+
 
