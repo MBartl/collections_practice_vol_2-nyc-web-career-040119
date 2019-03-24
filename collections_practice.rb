@@ -69,6 +69,7 @@ def merge_data(keys, data)
           stats[:first_name] = keys[i][:first_name]
           stats[:motto] = keys[i][:motto]
           output.push(stats)
+          i += 1
         else
           i += 1
         end
