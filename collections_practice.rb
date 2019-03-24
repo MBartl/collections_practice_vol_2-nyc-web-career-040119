@@ -82,7 +82,9 @@ end
 def find_cool(array)
   array.each do |data|
     data.each do |keys|
-      return keys
+      keys.each do |more|
+        return more
+      end
     end
   end
 end
