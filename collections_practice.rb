@@ -61,19 +61,13 @@ end
 
 def merge_data(keys, data)
   output = []
-    output.push(info)
-  end
-  return output
-  i = 0
-  while i < output.length do
     data.each do |both|
       both.each do |name, stats|
         keys.each do |info|
-        return stats
-        output[i] = (stats)
+          output.push(info, stats)
+        end
       end
     end
-    i += 1
   end
   return output
 end
