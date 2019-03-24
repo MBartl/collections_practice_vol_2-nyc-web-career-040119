@@ -60,10 +60,8 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  names = []
   output = []
   keys.each do |info|
-    names.push(info[:first_name])
     output.push(info)
   end
   return output
