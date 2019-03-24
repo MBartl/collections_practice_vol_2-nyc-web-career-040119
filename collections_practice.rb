@@ -94,6 +94,10 @@ def organize_schools(schools)
   schools.each do |school, city|
     if output == {}
       output[city[:location]] = [school]
+    else
+      output.each do |city2, school2|
+        return city2
+      end
     end
   end
   return output
