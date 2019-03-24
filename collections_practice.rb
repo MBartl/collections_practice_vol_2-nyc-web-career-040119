@@ -95,8 +95,12 @@ def organize_schools(hash)
     if output == {}
       output[city[:location]] = [school]
     else
-      output.each do |city2, school2|
-        return city[:location]
+      output.each do |out_city, out_school|
+        if city[:location] == out_city
+          output[out_city].push(school)
+        else
+          output[city[:location]] = [school]
+        end
       end
     end
   end
