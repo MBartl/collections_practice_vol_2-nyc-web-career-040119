@@ -67,12 +67,12 @@ def merge_data(keys, data)
       while i < keys.length do
         stats[:first_name] = keys[i][:first_name]
         stats[:motto] = keys[i][:motto]
-        return stats
+        output.push(stats)
         i += 1
       end
     end
   end
-  return data
+  return output
 end
 
 
