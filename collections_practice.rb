@@ -66,6 +66,7 @@ def merge_data(keys, data)
     names.push(info[:first_name])
     output.push(info)
   end
+  return output
   i = 0
   while i < output.length do
     data.each do |both|
