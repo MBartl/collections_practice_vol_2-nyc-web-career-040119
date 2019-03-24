@@ -80,6 +80,10 @@ def merge_data(keys, data)
 end
 
 def find_cool(array)
-  array.each do |
+  array.each do |key, value|
+    return value
+  end
+end
+    
   
 
