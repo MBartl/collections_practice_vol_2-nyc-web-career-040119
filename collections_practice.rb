@@ -61,13 +61,14 @@ end
 
 def merge_data(keys, data)
   output = []
-  i = 0
   data.each do |both|
     both.each do |name, stats|
+      i = 0
       if keys[i][:first_name] == name
         stats[:first_name] = keys[i][:first_name]
         stats[:motto] = keys[i][:motto]
         output.push(stats)
+      else
         i += 1
       end
     end
