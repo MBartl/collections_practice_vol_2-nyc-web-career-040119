@@ -86,6 +86,7 @@ def find_cool(array)
       output.push(data)
     end
   end
+  return output
 end
     
   
