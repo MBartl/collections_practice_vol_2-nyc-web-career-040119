@@ -83,8 +83,7 @@ def find_cool(array)
   array.each do |data|
     return data[:temperature]
     if data[:temperature] == "cool"
-        return 
-      end
+      return 
     end
   end
 end
