@@ -72,7 +72,6 @@ def merge_data(keys, data)
       return stats
     end
   end
-  return stats
 end
 
 
