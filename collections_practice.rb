@@ -68,7 +68,7 @@ def merge_data(keys, data)
       keys[:last_name] = stats[:last_name]
     end
   end
-  return output
+  return keys
 end
 
 
