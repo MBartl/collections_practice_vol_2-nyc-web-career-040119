@@ -62,15 +62,15 @@ end
 def merge_data(keys, data)
   output = []
   i = 0
-  while i < keys.length do
-    data.each do |both|
-      both.each do |name, stats|
+  data.each do |both|
+    both.each do |name, stats|
+      while i < keys.length do
         stats[:first_name] = keys[i][:first_name]
         stats[:motto] = keys[i][:motto]
         output.push(stats)
+        i += 1
       end
     end
-    i += 1
   end
   return output
 end
